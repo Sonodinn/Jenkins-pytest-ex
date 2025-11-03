@@ -17,5 +17,5 @@ class TestCalculator:
         assert self.calc.multiply(2, 2) == 4
 
     def test_divide(self):
-        assert self.calc.divdide(4, 2) == 2
-        
+        assert self.calc.divide(4, 2) == 2
+

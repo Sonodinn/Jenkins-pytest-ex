@@ -8,7 +8,7 @@ class Calculator:
     def multiply(self, a, b):
         return a * b
     
-    def divdide (self, a, b):
+    def divide (self, a, b):
         if b == 0:
             raise ValueError("0으로 나눌수 없습니다.")
         return a / b
