@@ -20,15 +20,7 @@ pipeline {
             }
         }
 
-        stage('Unit Test') {
-            steps {
-                echo 'Unit 테스트를 실행합니다'
-                sh '''
-                . venv/bin/activate
-                pytest test_calculator.py -v --junit-xml=unit-results.xml
-                '''
-            }
-        }
+      
         stage('Unit Test') {
             steps {
                 echo 'Unit 테스트를 실행합니다'
