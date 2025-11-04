@@ -29,6 +29,20 @@ pipeline {
                 '''
             }
         }
+        stage('Unit Test') {
+            steps {
+                echo 'Unit 테스트를 실행합니다'
+                sh '''
+                . venv/bin/activate
+                
+                echo "--- [디버깅] 현재 폴더 파일 목록 ---"
+                ls -la
+                echo "------------------------------------"
+                
+                pytest test_calculator.py -v --junit-xml=unit-results.xml
+                '''
+            }
+        }
 
         // stage('Intergration Test') {
         //     steps {
