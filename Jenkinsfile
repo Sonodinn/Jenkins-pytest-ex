@@ -40,16 +40,16 @@ pipeline {
             // }
         // }
 
-        post {
-            always {
+     post {
+        always {
                 echo '테스트 결과를 수집합니다.'
                 junit '*-results.xml'
             }
 
-            sucess {
+        sucess {
                 echo '모든 테스트 성공'
             }
-            failure{
+        failure{
                 echo '테스트 실패'
             }
         }
