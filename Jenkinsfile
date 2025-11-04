@@ -38,7 +38,7 @@ pipeline {
         //         pytest test_web.py -v --junit-xml=integration-results.xml
         //         '''
             // }
-        }
+        // }
 
         post {
             always {
