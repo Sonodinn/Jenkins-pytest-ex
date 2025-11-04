@@ -39,6 +39,7 @@ pipeline {
         //         '''
             // }
         // }
+    }
 
     post {
         always {
@@ -46,7 +47,7 @@ pipeline {
                 junit '*-results.xml'
             }
 
-        sucess {
+        success {
                 echo '모든 테스트 성공'
             }
         failure{
@@ -54,4 +55,3 @@ pipeline {
             }
         }
     }
-}
