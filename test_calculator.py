@@ -18,4 +18,6 @@ class TestCalculator:
 
     def test_divide(self):
         assert self.calc.divide(4, 2) == 2
+        assert self.calc.divide(42, 2) == 21
+
 
