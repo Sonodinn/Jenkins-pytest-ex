@@ -40,7 +40,7 @@ pipeline {
             // }
         // }
 
-     post {
+    post {
         always {
                 echo '테스트 결과를 수집합니다.'
                 junit '*-results.xml'
